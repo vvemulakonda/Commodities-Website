@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Wheat Investment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-boxes">
+                <a href="index.html" class="nav-box active">Dashboard</a>
+                <a href="investments.html" class="nav-box">Investments</a>
+                <a href="company-research.html" class="nav-box">Company Research</a>
+                <a href="pricing.html" class="nav-box">Pricing</a>
+                <a href="about.html" class="nav-box">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h1>Investment Dashboard</h1>
+        <h2>Wheat Price Analysis</h2>
+        <canvas id="wheatChart"></canvas>
+
+        <div class="exchange-rate">
+            <h3>USD Exchange Rate</h3>
+            <p>1 USD = <span id="usdRate">Fetching...</span></p>
+        </div>
+
+        <div class="news">
+            <h3>Real-time News</h3>
+            <ul id="newsFeed">Fetching news...</ul>
+        </div>
+    </section>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #4b0082; /* Purple */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Increased padding for more spacing */
+}
+
+.nav-boxes {
+    display: flex;
+    gap: 30px; /* Increased gap between the boxes */
+}
+
+.nav-box {
+    display: block;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border: 2px solid #4b0082; /* Purple border around each tab */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    background-color: #6a0dad; /* Slightly lighter purple for tabs */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 150px; /* Fixed width for tabs */
+}
+
+.nav-box:hover {
+    background-color: #9370db; /* Lighter purple on hover */
+    border-color: #9370db;
+}
+
+.nav-box.active {
+    background-color: #4b0082; /* Dark purple for active tab */
+    border-color: #4b0082;
+}
+
+/* Main section styling */
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #4b0082; /* Purple headers */
+}
+
+/* Pricing box styling */
+.pricing-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pricing-option {
+    border: 2px solid #4b0082;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    background-color: #e5e5f7;
+}
+
+.pricing-option h2 {
+    color: #4b0082;
+}
+
+/* Additional styling for the exchange rate and news sections */
+.exchange-rate, .news {
+    margin-top: 20px;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news ul li {
+    background-color: #c8e6c9; /* Light green for news articles */
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4b0082; /* Purple footer */
+    color: white;
+}
